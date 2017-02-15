@@ -10,7 +10,7 @@
 
 @class ASItem;
 
-@interface ASClipListViewController : UITableViewController
+@interface ASClipListViewController : UIViewController
 
 - (void)refresh;
 - (void)selectNextClip;

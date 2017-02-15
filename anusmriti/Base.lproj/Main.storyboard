@@ -272,91 +272,98 @@
                                                     <constraint firstAttribute="bottom" secondItem="kQU-46-WYh" secondAttribute="bottom" id="gVe-H8-Bnx"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvD-md-7op">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xvD-md-7op">
                                                 <rect key="frame" x="0.0" y="209" width="375" height="209"/>
                                                 <subviews>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TqO-JT-YR7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="209"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="9ww-le-kke" userLabel="Clip List Table Header View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clip Lists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfP-Y3-rvH">
-                                                                    <rect key="frame" x="8" y="6" width="111" height="18"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuW-fP-YGs" userLabel="Edit Clip List Button">
-                                                                    <rect key="frame" x="119" y="0.0" width="30" height="30"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="Ghg-O2-b9P"/>
-                                                                        <constraint firstAttribute="width" constant="30" id="uQK-1w-AYr"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                    <state key="normal" title="Edit">
-                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </state>
-                                                                    <state key="selected" title="Done">
-                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </state>
-                                                                    <connections>
-                                                                        <action selector="editClipList:" destination="4YM-SH-5OV" eventType="touchUpInside" id="WVw-7d-rdp"/>
-                                                                    </connections>
-                                                                </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-4z-fZG" userLabel="Add Clip List Button">
-                                                                    <rect key="frame" x="149" y="0.0" width="30" height="30"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="WVp-mz-zJi"/>
-                                                                        <constraint firstAttribute="width" constant="30" id="jkZ-5Y-0nA"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                    <state key="normal" title="+">
-                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    </state>
-                                                                    <connections>
-                                                                        <action selector="addClipList:" destination="4YM-SH-5OV" eventType="touchUpInside" id="MWp-46-Xkw"/>
-                                                                    </connections>
-                                                                </button>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstItem="4K0-4z-fZG" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="59k-m0-eHg"/>
-                                                                <constraint firstItem="PuW-fP-YGs" firstAttribute="leading" secondItem="FfP-Y3-rvH" secondAttribute="trailing" id="esp-7h-W3K"/>
-                                                                <constraint firstItem="FfP-Y3-rvH" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="fKM-HA-cM8"/>
-                                                                <constraint firstItem="4K0-4z-fZG" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="gcz-CK-Acs"/>
-                                                                <constraint firstItem="PuW-fP-YGs" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="qRK-MM-284"/>
-                                                                <constraint firstItem="FfP-Y3-rvH" firstAttribute="leading" secondItem="9ww-le-kke" secondAttribute="leading" constant="8" id="tfk-uH-jv7"/>
-                                                                <constraint firstAttribute="trailing" secondItem="4K0-4z-fZG" secondAttribute="trailing" constant="7.5" id="ulp-Uk-Vt3"/>
-                                                                <constraint firstItem="4K0-4z-fZG" firstAttribute="leading" secondItem="PuW-fP-YGs" secondAttribute="trailing" id="ywx-jp-GMZ"/>
-                                                            </constraints>
-                                                        </view>
-                                                        <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="asClipListTableCell" id="ciL-ra-xWM">
-                                                                <rect key="frame" x="0.0" y="58" width="187" height="44"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciL-ra-xWM" id="MAX-HY-eN5">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="43"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </tableViewCellContentView>
-                                                            </tableViewCell>
-                                                        </prototypes>
-                                                        <connections>
-                                                            <outlet property="dataSource" destination="4YM-SH-5OV" id="lQF-q3-8u9"/>
-                                                            <outlet property="delegate" destination="4YM-SH-5OV" id="jfU-bQ-eah"/>
-                                                        </connections>
-                                                    </tableView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sbi-W6-OdI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="209"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ww-le-kke" userLabel="Clip List Table Header View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clip Lists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfP-Y3-rvH">
+                                                                        <rect key="frame" x="0.0" y="6" width="107" height="18"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-4z-fZG" userLabel="Add Clip List Button">
+                                                                        <rect key="frame" x="147" y="0.0" width="40" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="WVp-mz-zJi"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="jkZ-5Y-0nA"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                                                        <state key="normal" title="+">
+                                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="addClipList:" destination="4YM-SH-5OV" eventType="touchUpInside" id="MWp-46-Xkw"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuW-fP-YGs" userLabel="Edit Clip List Button">
+                                                                        <rect key="frame" x="107" y="0.0" width="40" height="30"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="30" id="Ghg-O2-b9P"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="uQK-1w-AYr"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <state key="normal" title="Edit">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <state key="selected" title="Done">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="editClipList:" destination="4YM-SH-5OV" eventType="touchUpInside" id="WVw-7d-rdp"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="FfP-Y3-rvH" firstAttribute="leading" secondItem="9ww-le-kke" secondAttribute="leading" id="62r-mf-Hk8"/>
+                                                                    <constraint firstItem="PuW-fP-YGs" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="DhK-S9-O1I"/>
+                                                                    <constraint firstItem="PuW-fP-YGs" firstAttribute="leading" secondItem="FfP-Y3-rvH" secondAttribute="trailing" id="Ggw-ii-n7J"/>
+                                                                    <constraint firstItem="FfP-Y3-rvH" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="KKz-ch-ILr"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="4K0-4z-fZG" secondAttribute="trailing" id="Nxy-pv-N7D"/>
+                                                                    <constraint firstItem="4K0-4z-fZG" firstAttribute="centerY" secondItem="9ww-le-kke" secondAttribute="centerY" id="RzE-2C-x7N"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="cgG-3E-zaC"/>
+                                                                    <constraint firstItem="4K0-4z-fZG" firstAttribute="leading" secondItem="PuW-fP-YGs" secondAttribute="trailing" id="qDu-AZ-A5E"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TqO-JT-YR7">
+                                                                <rect key="frame" x="0.0" y="30" width="187" height="179"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <prototypes>
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="asClipListTableCell" id="ciL-ra-xWM">
+                                                                        <rect key="frame" x="0.0" y="28" width="187" height="44"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciL-ra-xWM" id="MAX-HY-eN5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="187" height="43"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                        </tableViewCellContentView>
+                                                                    </tableViewCell>
+                                                                </prototypes>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="4YM-SH-5OV" id="lQF-q3-8u9"/>
+                                                                    <outlet property="delegate" destination="4YM-SH-5OV" id="jfU-bQ-eah"/>
+                                                                </connections>
+                                                            </tableView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="9ww-le-kke" secondAttribute="trailing" id="NzS-h1-vhX"/>
+                                                            <constraint firstItem="9ww-le-kke" firstAttribute="leading" secondItem="Sbi-W6-OdI" secondAttribute="leading" id="WOW-fL-hpf"/>
+                                                            <constraint firstItem="9ww-le-kke" firstAttribute="top" secondItem="Sbi-W6-OdI" secondAttribute="top" id="y14-5z-DZv"/>
+                                                        </constraints>
+                                                    </stackView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CQ-Sk-IVa">
-                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="209"/>
+                                                        <rect key="frame" x="188" y="0.0" width="187" height="209"/>
                                                         <connections>
-                                                            <segue destination="83F-Uw-Qxc" kind="embed" id="fd0-Ne-dUv"/>
+                                                            <segue destination="Cc9-Qo-V9y" kind="embed" id="rYq-7A-ds4"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="1CQ-Sk-IVa" firstAttribute="width" secondItem="TqO-JT-YR7" secondAttribute="width" id="1ek-15-4pt"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -537,105 +544,129 @@
             </objects>
             <point key="canvasLocation" x="-1551.2" y="-204.64767616191907"/>
         </scene>
-        <!--Clip Table View Controller-->
-        <scene sceneID="hhG-fx-C1j">
+        <!--Clip List View Controller-->
+        <scene sceneID="23o-8Y-seT">
             <objects>
-                <tableViewController id="83F-Uw-Qxc" userLabel="Clip Table View Controller" customClass="ASClipListViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gci-N0-qEU">
-                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="209"/>
+                <viewController id="Cc9-Qo-V9y" customClass="ASClipListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ct7-md-jFf"/>
+                        <viewControllerLayoutGuide type="bottom" id="8lU-20-yTA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFF-i8-DL8">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="209"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WXB-nv-A0f">
+                                <rect key="frame" x="16" y="0.0" width="176" height="209"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omP-y2-eSh" userLabel="Clips Table Header View">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WN-CI-QQs">
+                                                <rect key="frame" x="0.0" y="6" width="97" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-Da-8NT">
+                                                <rect key="frame" x="1" y="1" width="94" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </stepper>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-un-LYZ">
+                                                <rect key="frame" x="97" y="0.0" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="BQc-4O-nly"/>
+                                                    <constraint firstAttribute="width" constant="40" id="JxJ-vv-pmj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Edit">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="Done">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="editClip:" destination="Cc9-Qo-V9y" eventType="touchUpInside" id="gTk-oa-4H9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GON-Xx-swv" userLabel="Add Clip Button">
+                                                <rect key="frame" x="136" y="0.0" width="40" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="2l8-mB-TLp"/>
+                                                    <constraint firstAttribute="height" constant="30" id="3CV-Wk-Rhi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addClip:" destination="Cc9-Qo-V9y" eventType="touchUpInside" id="KzR-1g-wq9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="GON-Xx-swv" firstAttribute="leading" secondItem="e9d-un-LYZ" secondAttribute="trailing" constant="-1" id="3KZ-mQ-MzV"/>
+                                            <constraint firstItem="e9d-un-LYZ" firstAttribute="leading" secondItem="5WN-CI-QQs" secondAttribute="trailing" id="550-i4-Y4U"/>
+                                            <constraint firstItem="l9E-Da-8NT" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="Anb-nH-Cub"/>
+                                            <constraint firstAttribute="height" constant="30" id="Ek1-YA-bB9"/>
+                                            <constraint firstItem="5WN-CI-QQs" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="Mhx-67-kXW"/>
+                                            <constraint firstItem="GON-Xx-swv" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="R5O-ue-z7G"/>
+                                            <constraint firstAttribute="trailing" secondItem="GON-Xx-swv" secondAttribute="trailing" id="iaC-iC-1v0"/>
+                                            <constraint firstItem="e9d-un-LYZ" firstAttribute="leading" secondItem="l9E-Da-8NT" secondAttribute="trailing" constant="2" id="jNc-zv-cXh"/>
+                                            <constraint firstItem="e9d-un-LYZ" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="k3b-0f-EzH"/>
+                                            <constraint firstItem="5WN-CI-QQs" firstAttribute="leading" secondItem="omP-y2-eSh" secondAttribute="leading" id="uvh-EL-2lC"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gci-N0-qEU">
+                                        <rect key="frame" x="0.0" y="30" width="176" height="179"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="asClipTableCell" textLabel="lSF-Zg-2gq" style="IBUITableViewCellStyleDefault" id="5gm-aG-cad">
+                                                <rect key="frame" x="0.0" y="28" width="176" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5gm-aG-cad" id="10N-SG-NhZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lSF-Zg-2gq">
+                                                            <rect key="frame" x="15" y="0.0" width="146" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Cc9-Qo-V9y" id="ZMG-VW-Um9"/>
+                                            <outlet property="delegate" destination="Cc9-Qo-V9y" id="8Ui-HN-hn2"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="omP-y2-eSh" userLabel="Clips Table Header View">
-                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GON-Xx-swv" userLabel="Add Clip Button">
-                                    <rect key="frame" x="150" y="0.0" width="30" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="30" id="2l8-mB-TLp"/>
-                                        <constraint firstAttribute="height" constant="30" id="3CV-Wk-Rhi"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <state key="normal" title="+">
-                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="addClip:" destination="83F-Uw-Qxc" eventType="touchUpInside" id="sgH-hk-rYF"/>
-                                    </connections>
-                                </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WN-CI-QQs">
-                                    <rect key="frame" x="8" y="6" width="112" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-Da-8NT">
-                                    <rect key="frame" x="16" y="1" width="94" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </stepper>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9d-un-LYZ">
-                                    <rect key="frame" x="120" y="0.0" width="30" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="BQc-4O-nly"/>
-                                        <constraint firstAttribute="width" constant="30" id="JxJ-vv-pmj"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                    <state key="normal" title="Edit">
-                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <state key="selected" title="Done">
-                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="editClip:" destination="83F-Uw-Qxc" eventType="touchUpInside" id="m8T-Qd-avD"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="GON-Xx-swv" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="Ozm-6r-Rgh"/>
-                                <constraint firstItem="e9d-un-LYZ" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="RTG-sQ-UlE"/>
-                                <constraint firstItem="5WN-CI-QQs" firstAttribute="centerY" secondItem="omP-y2-eSh" secondAttribute="centerY" id="WPa-f9-Xb5"/>
-                                <constraint firstItem="e9d-un-LYZ" firstAttribute="leading" secondItem="5WN-CI-QQs" secondAttribute="trailing" id="mhf-bb-xwG"/>
-                                <constraint firstItem="GON-Xx-swv" firstAttribute="leading" secondItem="e9d-un-LYZ" secondAttribute="trailing" id="pec-GZ-c75"/>
-                                <constraint firstItem="5WN-CI-QQs" firstAttribute="leading" secondItem="omP-y2-eSh" secondAttribute="leading" constant="8" id="q6d-ey-dbQ"/>
-                                <constraint firstAttribute="trailing" secondItem="GON-Xx-swv" secondAttribute="trailing" constant="7.5" id="zzO-D8-shI"/>
-                            </constraints>
-                        </view>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="asClipTableCell" textLabel="lSF-Zg-2gq" style="IBUITableViewCellStyleDefault" id="5gm-aG-cad">
-                                <rect key="frame" x="0.0" y="58" width="187.5" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5gm-aG-cad" id="10N-SG-NhZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lSF-Zg-2gq">
-                                            <rect key="frame" x="15" y="0.0" width="157.5" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="83F-Uw-Qxc" id="QUT-av-Pjg"/>
-                            <outlet property="delegate" destination="83F-Uw-Qxc" id="89G-sb-x61"/>
-                        </connections>
-                    </tableView>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="WXB-nv-A0f" secondAttribute="trailing" constant="-20" id="0H1-c4-eco"/>
+                            <constraint firstItem="8lU-20-yTA" firstAttribute="top" secondItem="WXB-nv-A0f" secondAttribute="bottom" id="ARS-Ux-n4V"/>
+                            <constraint firstItem="WXB-nv-A0f" firstAttribute="top" secondItem="ct7-md-jFf" secondAttribute="bottom" id="H5A-29-Pr9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WXB-nv-A0f" secondAttribute="leading" id="sh3-sL-WHi"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <outlet property="addClipButton" destination="GON-Xx-swv" id="ZuZ-43-aae"/>
-                        <outlet property="editClipButton" destination="e9d-un-LYZ" id="WEM-CJ-emC"/>
-                        <outlet property="repeatCountStepper" destination="l9E-Da-8NT" id="JhX-B8-xu1"/>
+                        <outlet property="addClipButton" destination="GON-Xx-swv" id="tfy-lA-caP"/>
+                        <outlet property="editClipButton" destination="e9d-un-LYZ" id="Lwb-RF-2Fw"/>
+                        <outlet property="repeatCountStepper" destination="l9E-Da-8NT" id="Soy-gW-1ob"/>
+                        <outlet property="tableView" destination="Gci-N0-qEU" id="sUn-5H-eRt"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ghU-Bm-0SC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQL-U1-2um" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-750.39999999999998" y="47.226386806596707"/>
+            <point key="canvasLocation" x="-643.20000000000005" y="112.89355322338831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f04-Gh-AEk">

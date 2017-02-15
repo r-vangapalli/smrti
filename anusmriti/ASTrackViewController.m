@@ -52,8 +52,6 @@
     [super viewDidLoad];
 
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    self.clipListTableView.layer.borderWidth = 1.0;
-    self.clipListTableView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     MPVolumeView *myVolumeView = [[MPVolumeView alloc] initWithFrame: self.mpVolumeViewParentView.bounds];
     myVolumeView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.mpVolumeViewParentView addSubview: myVolumeView];

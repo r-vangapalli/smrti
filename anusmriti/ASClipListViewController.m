@@ -14,8 +14,9 @@
 #import "ASClipRef.h"
 #import "NSDate+as.h"
 
-@interface ASClipListViewController ()
+@interface ASClipListViewController () <UITableViewDelegate, UITableViewDataSource>
 
+@property(nonatomic, weak) IBOutlet UITableView *tableView;
 @property(nonatomic, weak) IBOutlet UIButton *editClipButton;
 @property(nonatomic, weak) IBOutlet UIButton *addClipButton;
 @property(nonatomic, weak) IBOutlet UIStepper *repeatCountStepper;
