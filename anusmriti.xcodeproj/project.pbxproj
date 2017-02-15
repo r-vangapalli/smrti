@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		979A33AA2FAFD97F0D481399 /* libPods-anusmriti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CBB0F9195B26AAADAB4B96 /* libPods-anusmriti.a */; };
+		DC0C75E91E4FB75A00C402B2 /* NSMutableArray+move.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0C75E81E4FB75A00C402B2 /* NSMutableArray+move.m */; };
+		DC1372CD1E3B008400E06B66 /* ASTrackPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1372CC1E3B008400E06B66 /* ASTrackPropertiesViewController.m */; };
+		DC3328021E3C0B9B0029815E /* ASTrackProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3328011E3C0B9B0029815E /* ASTrackProperties.m */; };
+		DC3328051E43F0D50029815E /* ASClipRef.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3328041E43F0D50029815E /* ASClipRef.m */; };
+		DC4898971E24439F00B334ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4898961E24439F00B334ED /* main.m */; };
+		DC48989A1E24439F00B334ED /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4898991E24439F00B334ED /* ASAppDelegate.m */; };
+		DC48989D1E24439F00B334ED /* ASTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC48989C1E24439F00B334ED /* ASTrackViewController.m */; };
+		DC4898A01E24439F00B334ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC48989E1E24439F00B334ED /* Main.storyboard */; };
+		DC4898A31E24439F00B334ED /* anusmriti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC4898A11E24439F00B334ED /* anusmriti.xcdatamodeld */; };
+		DC4898A51E24439F00B334ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4898A41E24439F00B334ED /* Assets.xcassets */; };
+		DC4898A81E24439F00B334ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4898A61E24439F00B334ED /* LaunchScreen.storyboard */; };
+		DC4898B31E24439F00B334ED /* anusmritiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4898B21E24439F00B334ED /* anusmritiTests.m */; };
+		DC4898BE1E2443A000B334ED /* anusmritiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4898BD1E2443A000B334ED /* anusmritiUITests.m */; };
+		DC4898CE1E244A6700B334ED /* ASTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4898CC1E244A6700B334ED /* ASTrackListViewController.m */; };
+		DC4898D61E2462BE00B334ED /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4898D41E2462BE00B334ED /* CoreMedia.framework */; };
+		DC4898D71E2462BE00B334ED /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4898D51E2462BE00B334ED /* MediaPlayer.framework */; };
+		DC688C751E296A9C002A4BFB /* ASClipPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC688C741E296A9C002A4BFB /* ASClipPlayerViewController.m */; };
+		DC688C7A1E296BAB002A4BFB /* ASPositionFlagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC688C791E296BAB002A4BFB /* ASPositionFlagButton.m */; };
+		DC9A1B591E27E845009522A7 /* NSDate+as.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B581E27E845009522A7 /* NSDate+as.m */; };
+		DC9A1B5C1E27FDCF009522A7 /* ASItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B5B1E27FDCF009522A7 /* ASItem.m */; };
+		DC9A1B5F1E27FF8A009522A7 /* ASClip.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B5E1E27FF8A009522A7 /* ASClip.m */; };
+		DC9A1B621E281899009522A7 /* ASMasterClipList.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B611E281899009522A7 /* ASMasterClipList.m */; };
+		DC9A1B651E2818B0009522A7 /* ASClipList.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B641E2818B0009522A7 /* ASClipList.m */; };
+		DC9A1B701E283602009522A7 /* ASUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B6F1E283602009522A7 /* ASUtils.m */; };
+		DC9A1B761E28736B009522A7 /* ASClipListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9A1B751E28736B009522A7 /* ASClipListViewController.m */; };
+		DC9F687D1E253339003EC2BC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F687C1E253339003EC2BC /* AudioToolbox.framework */; };
+		DC9F687F1E253341003EC2BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F687E1E253341003EC2BC /* AVFoundation.framework */; };
+		DC9F68811E253360003EC2BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F68801E253360003EC2BC /* UIKit.framework */; };
+		DC9F68831E253367003EC2BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F68821E253367003EC2BC /* Foundation.framework */; };
+		DC9F68851E253372003EC2BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9F68841E253372003EC2BC /* CoreGraphics.framework */; };
+		DCD350921E26CD07007CD801 /* ASTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD350911E26CD07007CD801 /* ASTrack.m */; };
+		DCD350961E26CF36007CD801 /* ASAudioPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD350951E26CF36007CD801 /* ASAudioPlayerController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC4898AF1E24439F00B334ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC48988A1E24439F00B334ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4898911E24439F00B334ED;
+			remoteInfo = anusmriti;
+		};
+		DC4898BA1E2443A000B334ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC48988A1E24439F00B334ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC4898911E24439F00B334ED;
+			remoteInfo = anusmriti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2385815122C01E05AA75C9CC /* Pods-anusmriti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anusmriti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anusmriti/Pods-anusmriti.debug.xcconfig"; sourceTree = "<group>"; };
+		61CBB0F9195B26AAADAB4B96 /* libPods-anusmriti.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-anusmriti.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0C75E71E4FB75A00C402B2 /* NSMutableArray+move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+move.h"; sourceTree = "<group>"; };
+		DC0C75E81E4FB75A00C402B2 /* NSMutableArray+move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+move.m"; sourceTree = "<group>"; };
+		DC1372CB1E3B008400E06B66 /* ASTrackPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTrackPropertiesViewController.h; sourceTree = "<group>"; };
+		DC1372CC1E3B008400E06B66 /* ASTrackPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTrackPropertiesViewController.m; sourceTree = "<group>"; };
+		DC3328001E3C0B9B0029815E /* ASTrackProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTrackProperties.h; sourceTree = "<group>"; };
+		DC3328011E3C0B9B0029815E /* ASTrackProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTrackProperties.m; sourceTree = "<group>"; };
+		DC3328031E43F0D50029815E /* ASClipRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASClipRef.h; sourceTree = "<group>"; };
+		DC3328041E43F0D50029815E /* ASClipRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASClipRef.m; sourceTree = "<group>"; };
+		DC4898921E24439F00B334ED /* anusmriti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anusmriti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4898961E24439F00B334ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC4898981E24439F00B334ED /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
+		DC4898991E24439F00B334ED /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+		DC48989B1E24439F00B334ED /* ASTrackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ASTrackViewController.h; path = ../ASTrackViewController.h; sourceTree = "<group>"; };
+		DC48989C1E24439F00B334ED /* ASTrackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ASTrackViewController.m; path = ../ASTrackViewController.m; sourceTree = "<group>"; };
+		DC48989F1E24439F00B334ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC4898A21E24439F00B334ED /* anusmriti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = anusmriti.xcdatamodel; sourceTree = "<group>"; };
+		DC4898A41E24439F00B334ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC4898A71E24439F00B334ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC4898A91E24439F00B334ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4898AE1E24439F00B334ED /* anusmritiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anusmritiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4898B21E24439F00B334ED /* anusmritiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = anusmritiTests.m; sourceTree = "<group>"; };
+		DC4898B41E24439F00B334ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4898B91E2443A000B334ED /* anusmritiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anusmritiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4898BD1E2443A000B334ED /* anusmritiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = anusmritiUITests.m; sourceTree = "<group>"; };
+		DC4898BF1E2443A000B334ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4898CB1E244A6700B334ED /* ASTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASTrackListViewController.h; path = ../ASTrackListViewController.h; sourceTree = "<group>"; };
+		DC4898CC1E244A6700B334ED /* ASTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASTrackListViewController.m; path = ../ASTrackListViewController.m; sourceTree = "<group>"; };
+		DC4898D41E2462BE00B334ED /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DC4898D51E2462BE00B334ED /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DC688C731E296A9B002A4BFB /* ASClipPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASClipPlayerViewController.h; path = ../ASClipPlayerViewController.h; sourceTree = "<group>"; };
+		DC688C741E296A9C002A4BFB /* ASClipPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASClipPlayerViewController.m; path = ../ASClipPlayerViewController.m; sourceTree = "<group>"; };
+		DC688C781E296BAB002A4BFB /* ASPositionFlagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPositionFlagButton.h; sourceTree = "<group>"; };
+		DC688C791E296BAB002A4BFB /* ASPositionFlagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPositionFlagButton.m; sourceTree = "<group>"; };
+		DC9A1B571E27E845009522A7 /* NSDate+as.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+as.h"; sourceTree = "<group>"; };
+		DC9A1B581E27E845009522A7 /* NSDate+as.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+as.m"; sourceTree = "<group>"; };
+		DC9A1B5A1E27FDCF009522A7 /* ASItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASItem.h; sourceTree = "<group>"; };
+		DC9A1B5B1E27FDCF009522A7 /* ASItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASItem.m; sourceTree = "<group>"; };
+		DC9A1B5D1E27FF8A009522A7 /* ASClip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASClip.h; sourceTree = "<group>"; };
+		DC9A1B5E1E27FF8A009522A7 /* ASClip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASClip.m; sourceTree = "<group>"; };
+		DC9A1B601E281899009522A7 /* ASMasterClipList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMasterClipList.h; sourceTree = "<group>"; };
+		DC9A1B611E281899009522A7 /* ASMasterClipList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMasterClipList.m; sourceTree = "<group>"; };
+		DC9A1B631E2818B0009522A7 /* ASClipList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASClipList.h; sourceTree = "<group>"; };
+		DC9A1B641E2818B0009522A7 /* ASClipList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASClipList.m; sourceTree = "<group>"; };
+		DC9A1B6E1E283602009522A7 /* ASUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUtils.h; sourceTree = "<group>"; };
+		DC9A1B6F1E283602009522A7 /* ASUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUtils.m; sourceTree = "<group>"; };
+		DC9A1B741E28736B009522A7 /* ASClipListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASClipListViewController.h; path = ../ASClipListViewController.h; sourceTree = "<group>"; };
+		DC9A1B751E28736B009522A7 /* ASClipListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASClipListViewController.m; path = ../ASClipListViewController.m; sourceTree = "<group>"; };
+		DC9E1CA21E4A5FBB00361F35 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DC9F687C1E253339003EC2BC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DC9F687E1E253341003EC2BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DC9F68801E253360003EC2BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC9F68821E253367003EC2BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC9F68841E253372003EC2BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCD350901E26CD07007CD801 /* ASTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTrack.h; sourceTree = "<group>"; };
+		DCD350911E26CD07007CD801 /* ASTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTrack.m; sourceTree = "<group>"; };
+		DCD350941E26CF36007CD801 /* ASAudioPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAudioPlayerController.h; sourceTree = "<group>"; };
+		DCD350951E26CF36007CD801 /* ASAudioPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAudioPlayerController.m; sourceTree = "<group>"; };
+		F6326A0252318D45FF6F4927 /* Pods-anusmriti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anusmriti.release.xcconfig"; path = "Pods/Target Support Files/Pods-anusmriti/Pods-anusmriti.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC48988F1E24439F00B334ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9F68851E253372003EC2BC /* CoreGraphics.framework in Frameworks */,
+				DC9F68831E253367003EC2BC /* Foundation.framework in Frameworks */,
+				DC9F68811E253360003EC2BC /* UIKit.framework in Frameworks */,
+				DC9F687F1E253341003EC2BC /* AVFoundation.framework in Frameworks */,
+				DC9F687D1E253339003EC2BC /* AudioToolbox.framework in Frameworks */,
+				DC4898D61E2462BE00B334ED /* CoreMedia.framework in Frameworks */,
+				DC4898D71E2462BE00B334ED /* MediaPlayer.framework in Frameworks */,
+				979A33AA2FAFD97F0D481399 /* libPods-anusmriti.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4898AB1E24439F00B334ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4898B61E24439F00B334ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414F632BB4E4EDAD0219A131 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2385815122C01E05AA75C9CC /* Pods-anusmriti.debug.xcconfig */,
+				F6326A0252318D45FF6F4927 /* Pods-anusmriti.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC4898891E24439F00B334ED = {
+			isa = PBXGroup;
+			children = (
+				DC4898941E24439F00B334ED /* anusmriti */,
+				DC4898B11E24439F00B334ED /* anusmritiTests */,
+				DC4898BC1E2443A000B334ED /* anusmritiUITests */,
+				DC4898931E24439F00B334ED /* Products */,
+				DC4898D31E2462BE00B334ED /* Frameworks */,
+				414F632BB4E4EDAD0219A131 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DC4898931E24439F00B334ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC4898921E24439F00B334ED /* anusmriti.app */,
+				DC4898AE1E24439F00B334ED /* anusmritiTests.xctest */,
+				DC4898B91E2443A000B334ED /* anusmritiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC4898941E24439F00B334ED /* anusmriti */ = {
+			isa = PBXGroup;
+			children = (
+				DC4898981E24439F00B334ED /* ASAppDelegate.h */,
+				DC4898991E24439F00B334ED /* ASAppDelegate.m */,
+				DC688C771E296B10002A4BFB /* controllers */,
+				DCD3508F1E26CCB4007CD801 /* model */,
+				DCD350931E26CF05007CD801 /* player */,
+				DC9A1B501E27E602009522A7 /* util */,
+				DC688C761E296B10002A4BFB /* views */,
+				DC48989E1E24439F00B334ED /* Main.storyboard */,
+				DC4898A41E24439F00B334ED /* Assets.xcassets */,
+				DC4898A61E24439F00B334ED /* LaunchScreen.storyboard */,
+				DC4898A91E24439F00B334ED /* Info.plist */,
+				DC4898A11E24439F00B334ED /* anusmriti.xcdatamodeld */,
+				DC4898951E24439F00B334ED /* Supporting Files */,
+			);
+			path = anusmriti;
+			sourceTree = "<group>";
+		};
+		DC4898951E24439F00B334ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC4898961E24439F00B334ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC4898B11E24439F00B334ED /* anusmritiTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC4898B21E24439F00B334ED /* anusmritiTests.m */,
+				DC4898B41E24439F00B334ED /* Info.plist */,
+			);
+			path = anusmritiTests;
+			sourceTree = "<group>";
+		};
+		DC4898BC1E2443A000B334ED /* anusmritiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC4898BD1E2443A000B334ED /* anusmritiUITests.m */,
+				DC4898BF1E2443A000B334ED /* Info.plist */,
+			);
+			path = anusmritiUITests;
+			sourceTree = "<group>";
+		};
+		DC4898D31E2462BE00B334ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC9E1CA21E4A5FBB00361F35 /* CloudKit.framework */,
+				DC9F68841E253372003EC2BC /* CoreGraphics.framework */,
+				DC9F68821E253367003EC2BC /* Foundation.framework */,
+				DC9F68801E253360003EC2BC /* UIKit.framework */,
+				DC9F687E1E253341003EC2BC /* AVFoundation.framework */,
+				DC9F687C1E253339003EC2BC /* AudioToolbox.framework */,
+				DC4898D41E2462BE00B334ED /* CoreMedia.framework */,
+				DC4898D51E2462BE00B334ED /* MediaPlayer.framework */,
+				61CBB0F9195B26AAADAB4B96 /* libPods-anusmriti.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC688C761E296B10002A4BFB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DC688C781E296BAB002A4BFB /* ASPositionFlagButton.h */,
+				DC688C791E296BAB002A4BFB /* ASPositionFlagButton.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DC688C771E296B10002A4BFB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A1B741E28736B009522A7 /* ASClipListViewController.h */,
+				DC9A1B751E28736B009522A7 /* ASClipListViewController.m */,
+				DC48989B1E24439F00B334ED /* ASTrackViewController.h */,
+				DC48989C1E24439F00B334ED /* ASTrackViewController.m */,
+				DC4898CB1E244A6700B334ED /* ASTrackListViewController.h */,
+				DC4898CC1E244A6700B334ED /* ASTrackListViewController.m */,
+				DC688C731E296A9B002A4BFB /* ASClipPlayerViewController.h */,
+				DC688C741E296A9C002A4BFB /* ASClipPlayerViewController.m */,
+				DC1372CB1E3B008400E06B66 /* ASTrackPropertiesViewController.h */,
+				DC1372CC1E3B008400E06B66 /* ASTrackPropertiesViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		DC9A1B501E27E602009522A7 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A1B571E27E845009522A7 /* NSDate+as.h */,
+				DC9A1B581E27E845009522A7 /* NSDate+as.m */,
+				DC9A1B6E1E283602009522A7 /* ASUtils.h */,
+				DC9A1B6F1E283602009522A7 /* ASUtils.m */,
+				DC0C75E71E4FB75A00C402B2 /* NSMutableArray+move.h */,
+				DC0C75E81E4FB75A00C402B2 /* NSMutableArray+move.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		DCD3508F1E26CCB4007CD801 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DC9A1B5A1E27FDCF009522A7 /* ASItem.h */,
+				DC9A1B5B1E27FDCF009522A7 /* ASItem.m */,
+				DCD350901E26CD07007CD801 /* ASTrack.h */,
+				DCD350911E26CD07007CD801 /* ASTrack.m */,
+				DC9A1B631E2818B0009522A7 /* ASClipList.h */,
+				DC9A1B641E2818B0009522A7 /* ASClipList.m */,
+				DC9A1B5D1E27FF8A009522A7 /* ASClip.h */,
+				DC9A1B5E1E27FF8A009522A7 /* ASClip.m */,
+				DC9A1B601E281899009522A7 /* ASMasterClipList.h */,
+				DC9A1B611E281899009522A7 /* ASMasterClipList.m */,
+				DC3328001E3C0B9B0029815E /* ASTrackProperties.h */,
+				DC3328011E3C0B9B0029815E /* ASTrackProperties.m */,
+				DC3328031E43F0D50029815E /* ASClipRef.h */,
+				DC3328041E43F0D50029815E /* ASClipRef.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DCD350931E26CF05007CD801 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				DCD350941E26CF36007CD801 /* ASAudioPlayerController.h */,
+				DCD350951E26CF36007CD801 /* ASAudioPlayerController.m */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC4898911E24439F00B334ED /* anusmriti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4898C21E2443A000B334ED /* Build configuration list for PBXNativeTarget "anusmriti" */;
+			buildPhases = (
+				DA99C9F4D432626B0C0AF56F /* [CP] Check Pods Manifest.lock */,
+				DC48988E1E24439F00B334ED /* Sources */,
+				DC48988F1E24439F00B334ED /* Frameworks */,
+				DC4898901E24439F00B334ED /* Resources */,
+				27297E569E0B1A2CEA6679AD /* [CP] Embed Pods Frameworks */,
+				DD5A0F148602C9357E152E2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = anusmriti;
+			productName = anusmriti;
+			productReference = DC4898921E24439F00B334ED /* anusmriti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC4898AD1E24439F00B334ED /* anusmritiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4898C51E2443A000B334ED /* Build configuration list for PBXNativeTarget "anusmritiTests" */;
+			buildPhases = (
+				DC4898AA1E24439F00B334ED /* Sources */,
+				DC4898AB1E24439F00B334ED /* Frameworks */,
+				DC4898AC1E24439F00B334ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4898B01E24439F00B334ED /* PBXTargetDependency */,
+			);
+			name = anusmritiTests;
+			productName = anusmritiTests;
+			productReference = DC4898AE1E24439F00B334ED /* anusmritiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC4898B81E24439F00B334ED /* anusmritiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4898C81E2443A000B334ED /* Build configuration list for PBXNativeTarget "anusmritiUITests" */;
+			buildPhases = (
+				DC4898B51E24439F00B334ED /* Sources */,
+				DC4898B61E24439F00B334ED /* Frameworks */,
+				DC4898B71E24439F00B334ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4898BB1E2443A000B334ED /* PBXTargetDependency */,
+			);
+			name = anusmritiUITests;
+			productName = anusmritiUITests;
+			productReference = DC4898B91E2443A000B334ED /* anusmritiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC48988A1E24439F00B334ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ram;
+				TargetAttributes = {
+					DC4898911E24439F00B334ED = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L86CU573R9;
+						ProvisioningStyle = Automatic;
+					};
+					DC4898AD1E24439F00B334ED = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L86CU573R9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC4898911E24439F00B334ED;
+					};
+					DC4898B81E24439F00B334ED = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = L86CU573R9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC4898911E24439F00B334ED;
+					};
+				};
+			};
+			buildConfigurationList = DC48988D1E24439F00B334ED /* Build configuration list for PBXProject "anusmriti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC4898891E24439F00B334ED;
+			productRefGroup = DC4898931E24439F00B334ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC4898911E24439F00B334ED /* anusmriti */,
+				DC4898AD1E24439F00B334ED /* anusmritiTests */,
+				DC4898B81E24439F00B334ED /* anusmritiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC4898901E24439F00B334ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4898A81E24439F00B334ED /* LaunchScreen.storyboard in Resources */,
+				DC4898A51E24439F00B334ED /* Assets.xcassets in Resources */,
+				DC4898A01E24439F00B334ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4898AC1E24439F00B334ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4898B71E24439F00B334ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27297E569E0B1A2CEA6679AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-anusmriti/Pods-anusmriti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA99C9F4D432626B0C0AF56F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5A0F148602C9357E152E2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-anusmriti/Pods-anusmriti-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC48988E1E24439F00B334ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3328051E43F0D50029815E /* ASClipRef.m in Sources */,
+				DC688C7A1E296BAB002A4BFB /* ASPositionFlagButton.m in Sources */,
+				DC9A1B621E281899009522A7 /* ASMasterClipList.m in Sources */,
+				DC48989D1E24439F00B334ED /* ASTrackViewController.m in Sources */,
+				DC0C75E91E4FB75A00C402B2 /* NSMutableArray+move.m in Sources */,
+				DC1372CD1E3B008400E06B66 /* ASTrackPropertiesViewController.m in Sources */,
+				DC4898CE1E244A6700B334ED /* ASTrackListViewController.m in Sources */,
+				DC9A1B651E2818B0009522A7 /* ASClipList.m in Sources */,
+				DCD350961E26CF36007CD801 /* ASAudioPlayerController.m in Sources */,
+				DC688C751E296A9C002A4BFB /* ASClipPlayerViewController.m in Sources */,
+				DC9A1B701E283602009522A7 /* ASUtils.m in Sources */,
+				DC9A1B5C1E27FDCF009522A7 /* ASItem.m in Sources */,
+				DC48989A1E24439F00B334ED /* ASAppDelegate.m in Sources */,
+				DCD350921E26CD07007CD801 /* ASTrack.m in Sources */,
+				DC9A1B761E28736B009522A7 /* ASClipListViewController.m in Sources */,
+				DC4898A31E24439F00B334ED /* anusmriti.xcdatamodeld in Sources */,
+				DC3328021E3C0B9B0029815E /* ASTrackProperties.m in Sources */,
+				DC9A1B5F1E27FF8A009522A7 /* ASClip.m in Sources */,
+				DC9A1B591E27E845009522A7 /* NSDate+as.m in Sources */,
+				DC4898971E24439F00B334ED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4898AA1E24439F00B334ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4898B31E24439F00B334ED /* anusmritiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4898B51E24439F00B334ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4898BE1E2443A000B334ED /* anusmritiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC4898B01E24439F00B334ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4898911E24439F00B334ED /* anusmriti */;
+			targetProxy = DC4898AF1E24439F00B334ED /* PBXContainerItemProxy */;
+		};
+		DC4898BB1E2443A000B334ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC4898911E24439F00B334ED /* anusmriti */;
+			targetProxy = DC4898BA1E2443A000B334ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC48989E1E24439F00B334ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC48989F1E24439F00B334ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC4898A61E24439F00B334ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC4898A71E24439F00B334ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC4898C01E2443A000B334ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC4898C11E2443A000B334ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC4898C31E2443A000B334ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2385815122C01E05AA75C9CC /* Pods-anusmriti.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				DEVELOPMENT_TEAM = L86CU573R9;
+				INFOPLIST_FILE = anusmriti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vangapalli.anusmriti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC4898C41E2443A000B334ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6326A0252318D45FF6F4927 /* Pods-anusmriti.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				DEVELOPMENT_TEAM = L86CU573R9;
+				INFOPLIST_FILE = anusmriti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vangapalli.anusmriti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC4898C61E2443A000B334ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L86CU573R9;
+				INFOPLIST_FILE = anusmritiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vangapalli.anusmritiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anusmriti.app/anusmriti";
+			};
+			name = Debug;
+		};
+		DC4898C71E2443A000B334ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L86CU573R9;
+				INFOPLIST_FILE = anusmritiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vangapalli.anusmritiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anusmriti.app/anusmriti";
+			};
+			name = Release;
+		};
+		DC4898C91E2443A000B334ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L86CU573R9;
+				INFOPLIST_FILE = anusmritiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vangapalli.anusmritiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = anusmriti;
+			};
+			name = Debug;
+		};
+		DC4898CA1E2443A000B334ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L86CU573R9;
+				INFOPLIST_FILE = anusmritiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vangapalli.anusmritiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = anusmriti;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC48988D1E24439F00B334ED /* Build configuration list for PBXProject "anusmriti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4898C01E2443A000B334ED /* Debug */,
+				DC4898C11E2443A000B334ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4898C21E2443A000B334ED /* Build configuration list for PBXNativeTarget "anusmriti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4898C31E2443A000B334ED /* Debug */,
+				DC4898C41E2443A000B334ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4898C51E2443A000B334ED /* Build configuration list for PBXNativeTarget "anusmritiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4898C61E2443A000B334ED /* Debug */,
+				DC4898C71E2443A000B334ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC4898C81E2443A000B334ED /* Build configuration list for PBXNativeTarget "anusmritiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4898C91E2443A000B334ED /* Debug */,
+				DC4898CA1E2443A000B334ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC4898A11E24439F00B334ED /* anusmriti.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC4898A21E24439F00B334ED /* anusmriti.xcdatamodel */,
+			);
+			currentVersion = DC4898A21E24439F00B334ED /* anusmriti.xcdatamodel */;
+			path = anusmriti.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC48988A1E24439F00B334ED /* Project object */;
+}
